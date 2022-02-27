@@ -12,5 +12,4 @@ users = {
     "ann" : "pass123",
     "mike" : "password123",
     "lizz" : "pass123",
-    "" : ""
 }
