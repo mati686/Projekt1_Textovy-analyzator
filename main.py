@@ -50,7 +50,7 @@ for word in words_list:
         count_sum += int(word)
     words_list[i] = word
     i += 1
-    len_dict[len(word)] = len_dict.get(len(word), 0) + 1
+    len_dict[len(word)] = len_dict.get(len(word), 0) + 1    #slovnik delky slov a poctu techto slov
 
 print(f"There are {len(words_list)} words in the selected text.")
 print(f"There are {count_title} titlecase words.")
@@ -66,5 +66,5 @@ if tab % 2 != 0:                                #oprava je delka liche cislo
     tab += 1
 print(f"LEN|{' ' * ((tab-9)//2)}OCCURENCES{' ' * ((tab-9)//2)}|NR.")
 set_len = sorted(set(len_dict))
-for j in set_len:
+for j in set_len:                               #tisk sloupcového grafu
     print(f"{' ' * (3 - len(str(j)))}{j}|{'*' * len_dict.get(j)}{' ' * (tab - len_dict.get(j))}|{len_dict.get(j)}")
