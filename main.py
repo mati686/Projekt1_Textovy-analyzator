@@ -31,9 +31,9 @@ if 0 > index or index > len(TEXTS):
     exit()
 print(ODDLEVAC)
 
-text = TEXTS[index]
 
 #analýza textu
+text = TEXTS[index]
 words_list = text.split()
 len_dict = {}
 i = 0                               #pomocný index
